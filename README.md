@@ -1,8 +1,9 @@
-# around-hub
+# 기초부터 튼튼히 하자 : around-hub
 Around HUB SpringBoot Study
 
-## Status
-7/51 ing (2021.07.01)
+## Status ( 8 /51 )
+
+- [x] 8회차 : Get Api를 만드는 다양한 방법 실습, 2023-07-22
 
 ## Talend API Tester
 
