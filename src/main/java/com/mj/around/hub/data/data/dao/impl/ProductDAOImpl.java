@@ -1,8 +1,8 @@
-package com.mj.around.hub.controller.data.dao.impl;
+package com.mj.around.hub.data.data.dao.impl;
 
-import com.mj.around.hub.controller.data.dao.ProductDAO;
-import com.mj.around.hub.controller.data.entity.ProductEntity;
-import com.mj.around.hub.controller.data.repository.ProductRepository;
+import com.mj.around.hub.data.data.dao.ProductDAO;
+import com.mj.around.hub.data.data.entity.ProductEntity;
+import com.mj.around.hub.data.data.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor

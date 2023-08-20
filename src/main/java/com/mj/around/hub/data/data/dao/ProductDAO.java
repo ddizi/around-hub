@@ -1,6 +1,6 @@
-package com.mj.around.hub.controller.data.dao;
+package com.mj.around.hub.data.data.dao;
 
-import com.mj.around.hub.controller.data.entity.ProductEntity;
+import com.mj.around.hub.data.data.entity.ProductEntity;
 
 public interface ProductDAO {
 

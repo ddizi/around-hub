@@ -1,4 +1,4 @@
-package com.mj.around.hub.controller.dto;
+package com.mj.around.hub.dto.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

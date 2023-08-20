@@ -1,4 +1,4 @@
-package com.mj.around.hub.controller.data.entity;
+package com.mj.around.hub.data.data.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,6 +1,6 @@
 package com.mj.around.hub.controller;
 
-import com.mj.around.hub.controller.dto.MemberDto;
+import com.mj.around.hub.dto.dto.MemberDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PutMapping;

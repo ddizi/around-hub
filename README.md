@@ -2,7 +2,7 @@
 
 Around HUB SpringBoot Study
 
-## Status ( 8 /51 )
+## Status ( 15 /51 )
 
 - [x] 8회차 : Get Api를 만드는 다양한 방법 실습, 2023-07-22
 - [x] 9회차 : Maria DB 설치, 2023-07-23
@@ -11,6 +11,7 @@ Around HUB SpringBoot Study
 - [x] 12회차 : PUT API, DELETE API 작성하는 방법 | ResponseEntity , 2023-08-12
 - [x] 13회차 : lombok , 2023-08-19
 - [x] 14회차 : Database 적용 , 2023-08-19
+- [x] 15회차 : ORM, JPA, Spring Data JPA , 2023-08-20
 
 ## New Util
 
