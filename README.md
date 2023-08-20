@@ -10,6 +10,7 @@ Around HUB SpringBoot Study
 - [x] 11회차 : Swagger, 2023-07-29
 - [x] 12회차 : PUT API, DELETE API 작성하는 방법 | ResponseEntity , 2023-08-12
 - [x] 13회차 : lombok , 2023-08-19
+- [x] 14회차 : Database 적용 , 2023-08-19
 
 ## New Util
 
