@@ -1,5 +1,6 @@
-package com.mj.around.hub.data.data.entity;
+package com.mj.around.hub.data.entity;
 
+import com.mj.around.hub.data.dto.ProductDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -23,4 +24,13 @@ public class ProductEntity {
     private String productName;
     private String productPrice;
     private String productStock;
+
+    public ProductDto toDto() {
+        return ProductDto.builder()
+                .productId(productId)
+                .productName(productName)
+                .productPrice(productPrice)
+                .productStock(productStock)
+                .build();
+    }
 }

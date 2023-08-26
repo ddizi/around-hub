@@ -1,6 +1,6 @@
-package com.mj.around.hub.data.data.dto;
+package com.mj.around.hub.data.dto;
 
-import com.mj.around.hub.data.data.entity.ProductEntity;
+import com.mj.around.hub.data.entity.ProductEntity;
 import lombok.*;
 
 @Getter

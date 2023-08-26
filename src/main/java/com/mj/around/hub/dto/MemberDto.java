@@ -1,4 +1,4 @@
-package com.mj.around.hub.dto.dto;
+package com.mj.around.hub.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
