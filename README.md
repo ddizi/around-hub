@@ -12,7 +12,7 @@ Around HUB SpringBoot Study
 - [x] 13회차 : lombok , 2023-08-19
 - [x] 14회차 : Database 적용 , 2023-08-19
 - [x] 15회차 : ORM, JPA, Spring Data JPA , 2023-08-20
-
+- [x] 16회차 : Logback , 2023-09-02
 ## New Util
 
 ### Talend API Tester : 간단히 API를 테스트할 수 있는 크롬 확장 프로그램

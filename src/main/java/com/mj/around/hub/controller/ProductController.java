@@ -3,18 +3,24 @@ package com.mj.around.hub.controller;
 import com.mj.around.hub.data.dto.ProductDto;
 import com.mj.around.hub.service.ProductService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("api/v1/product-api")
 @RequiredArgsConstructor
+@Slf4j
 public class ProductController {
 
     private final ProductService productService;
 
     @GetMapping("/product/{productId}")
     public ProductDto getProduct(@PathVariable String productId) {
-        return productService.getProduct(productId);
+        long start = System.currentTimeMillis();
+        log.info("[ProductController] perform {} of Around Hub API", "getProduct");
+        ProductDto productDto = productService.getProduct(productId);
+        log.info("[ProductController] Response :: productId = {} productName = {} responseTime = {}ms", productId, productDto.getProductName(), System.currentTimeMillis() - start);
+        return productDto;
     }
 
     @PostMapping("/product")
