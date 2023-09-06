@@ -6,6 +6,8 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+
 @RestController
 @RequestMapping("api/v1/product-api")
 @RequiredArgsConstructor
@@ -24,11 +26,11 @@ public class ProductController {
     }
 
     @PostMapping("/product")
-    public ProductDto createProduct(@RequestBody ProductDto productDto) {
+    public ProductDto createProduct(@Valid @RequestBody ProductDto productDto) {
         String productId = productDto.getProductId();
         String productName = productDto.getProductName();
-        String productPrice = productDto.getProductPrice();
-        String productStock = productDto.getProductStock();
+        int productPrice = productDto.getProductPrice();
+        int productStock = productDto.getProductStock();
 
         return productService.saveProduct(productId, productName, productPrice, productStock);
     }

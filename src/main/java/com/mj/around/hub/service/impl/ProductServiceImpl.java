@@ -13,7 +13,7 @@ public class ProductServiceImpl implements ProductService {
     private final ProductDataHandler productDataHandler;
 
     @Override
-    public ProductDto saveProduct(String productId, String productName, String productPrice, String productStock) {
+    public ProductDto saveProduct(String productId, String productName, int productPrice, int productStock) {
         return productDataHandler.saveProduct(productId, productName, productPrice, productStock).toDto();
     }
 

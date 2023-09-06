@@ -16,7 +16,7 @@ public class ProductDataHandlerImpl implements ProductDataHandler {
     private final ProductDAO productDAO;
 
     @Override
-    public ProductEntity saveProduct(String productId, String productName, String productPrice, String productStock) {
+    public ProductEntity saveProduct(String productId, String productName, int productPrice, int productStock) {
         ProductEntity productEntity = ProductEntity.builder()
                 .productId(productId)
                 .productName(productName)

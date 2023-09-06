@@ -22,8 +22,8 @@ public class ProductEntity {
     @Id
     private String productId;
     private String productName;
-    private String productPrice;
-    private String productStock;
+    private int productPrice;
+    private int productStock;
 
     public ProductDto toDto() {
         return ProductDto.builder()
