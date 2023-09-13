@@ -1,4 +1,4 @@
-package com.mj.around.hub.exception;
+package com.mj.around.hub.common.exception;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
@@ -28,4 +28,15 @@ public class AroundHubExceptionHandler {
         return new ResponseEntity<>(body, headers, status);
     }
 
+    @ExceptionHandler(AroundHubException.class)
+    public ResponseEntity<Map<String,String>> aroundHubExceptionHandler(AroundHubException e) {
+        HttpHeaders headers = new HttpHeaders();
+
+        Map<String,String> body = new HashMap<>();
+        body.put("error type", e.getHttpStatusType());
+        body.put("code", Integer.toString(e.getHttpStatusValue()));
+        body.put("message", e.getMessage());
+
+        return new ResponseEntity<>(body, headers, e.getHttpStatus());
+    }
 }

@@ -1,9 +1,12 @@
 package com.mj.around.hub.controller;
 
+import com.mj.around.hub.common.Constatnts;
+import com.mj.around.hub.common.exception.AroundHubException;
 import com.mj.around.hub.data.dto.ProductDto;
 import com.mj.around.hub.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -38,5 +41,10 @@ public class ProductController {
     @DeleteMapping("/product/{productId}")
     public void deleteProduct(@PathVariable String productId) {
         productService.deleteProduct(productId);
+    }
+
+    @PostMapping("/product/exception")
+    public void exceptionTest() throws AroundHubException {
+        throw new AroundHubException(Constatnts.ExceptionClass.PRODUCT, HttpStatus.FORBIDDEN, "접근 금지!!!");
     }
 }

@@ -15,6 +15,7 @@
 - [x] 16회차 : Logback , 2023-09-02
 - [x] 17회차 : Validation , 2023-09-02
 - [x] 18회차 : Exception , 2023-09-13
+- [x] 18회차 : Custom Exception , 2023-09-13
 
 
 ## New Util
