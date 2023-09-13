@@ -14,6 +14,7 @@
 - [x] 15회차 : ORM, JPA, Spring Data JPA , 2023-08-20
 - [x] 16회차 : Logback , 2023-09-02
 - [x] 17회차 : Validation , 2023-09-02
+- [x] 18회차 : Exception , 2023-09-13
 
 
 ## New Util
